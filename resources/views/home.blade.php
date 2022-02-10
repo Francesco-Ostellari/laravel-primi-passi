@@ -7,6 +7,11 @@
   <title>Document</title>
 </head>
 <body>
+  <header>
+    <ul>
+      <li><a href="{{route('info')}}">info</a></li> 
+    </ul>
+  </header>
   <h1>Home</h1>
   <h2>Nome: {{ $name }}</h2>
   <h2>Cognome: {{ $lastname }}</h2>

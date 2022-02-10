@@ -22,4 +22,14 @@ Route::get('/', function () {
     ]
   ];
   return view('home', $data);
-});
+}) ->name('home');
+Route::get('/info', function () {
+    $data = [
+      'info' => [
+        'mail' => 'mail: francesco@mail.it',
+        'telefono' => 'telefono: 123456789',
+        'social' => 'social: francesco_ostellari'
+      ]   
+    ];
+  return view('info', $data);
+})->name('info');
