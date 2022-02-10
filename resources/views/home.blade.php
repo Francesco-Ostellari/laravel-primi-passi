@@ -7,6 +7,16 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h1>Home</h1>
+  <h2>Nome: {{ $name }}</h2>
+  <h2>Cognome: {{ $lastname }}</h2>
+  <h3>Sports:</h3>
+  @if(isset($sports))
+  <ul>
+    @foreach ($sports as $sport)
+      <li>{{ $sport }}</li>
+    @endforeach
+  </ul>
+  @endif
 </body>
 </html>
